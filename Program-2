@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class A
+{
+	public:
+		void display()
+		{
+			cout<<"\nClass A";
+		}
+};
+
+class B
+{
+	public:
+		void display()
+		{
+			cout<<"\nClass B";
+		}
+};
+
+int main()
+{
+	A *a;
+	B *b;
+	a=new A;
+	b=const_cast<B*>(a);
+	a->display();
+	b->display();
+	return 0;
+}
