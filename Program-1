@@ -1,0 +1,14 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char ch;
+	int i;
+	cout << "Enter a character: ";
+	cin >> ch;
+	i = dynamic_cast<int>(ch);
+	cout << "The character " << ch << " is converted to " << i << endl;
+	return 0;
+}
