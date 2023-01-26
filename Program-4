@@ -1,0 +1,17 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	double input;
+	int output;
+
+	cout << "Enter a double value: ";
+	cin >> input;
+
+	output = static_cast<int>(input);
+
+	cout << "The integer value is: " << output << endl;
+
+	return 0;
+}
